@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drift — Draped in Stories</title>
+  <meta name="description" content="Handwoven silk sarees, draped for every celebration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/lenis.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ INTRO: paisley curtain ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg class="intro__pattern" width="100%" height="100%">
+    <defs>
+      <pattern id="paisley" width="260" height="260" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <rect width="260" height="260" fill="#d01c1f"/>
+        <g fill="none" stroke="#f4b23a" stroke-width="3">
+          <path d="M70 40c40 0 60 40 40 80s-70 60-80 20 10-100 40-100z"/>
+          <path d="M70 58c26 0 38 26 25 52s-46 38-52 12 7-64 27-64z" stroke-width="2"/>
+          <path d="M108 104c18 16 22 40 8 60" stroke-width="2"/>
+          <path d="M190 170c40 0 60 40 40 80s-70 60-80 20 10-100 40-100z"/>
+          <path d="M190 188c26 0 38 26 25 52s-46 38-52 12 7-64 27-64z" stroke-width="2"/>
+        </g>
+        <g fill="#f4b23a">
+          <circle cx="70" cy="95" r="9"/><circle cx="190" cy="225" r="9"/>
+          <circle cx="200" cy="60" r="16" fill="none" stroke="#f4b23a" stroke-width="3"/>
+          <circle cx="200" cy="60" r="6"/>
+          <circle cx="40" cy="200" r="14" fill="none" stroke="#f4b23a" stroke-width="3"/>
+          <circle cx="40" cy="200" r="5"/>
+          <circle cx="140" cy="20" r="3"/><circle cx="240" cy="120" r="3"/><circle cx="120" cy="230" r="3"/>
+          <circle cx="20" cy="120" r="3"/><circle cx="150" cy="140" r="4"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#paisley)"/>
+  </svg>
+  <div class="intro__brand"><span data-brand>DRIFT</span><small data-tagline>Draped in Stories</small></div>
+</div>
+
+<!-- ============ ANNOUNCEMENT + HEADER ============ -->
+<div class="topbar">
+  <div class="topbar__center">
+    <span>✦ New drop</span>
+    <span class="pill pill--lime">Up to 40% off</span>
+    <span>Free shipping all over India ✦</span>
+  </div>
+  <div class="topbar__right"><span>INR ▾</span><span>EN ▾</span></div>
+</div>
+
+<header class="header" id="header">
+  <a href="#" class="logo"><span data-brand>DRIFT</span><sup>®</sup><small data-tagline>Draped in Stories</small></a>
+  <nav class="nav">
+    <a href="#" class="is-active">Home</a>
+    <a href="#arrivals">Sarees</a>
+    <a href="#signatures">Collections</a>
+    <a href="#edits">Occasion</a>
+    <a href="#footer">About</a>
+  </nav>
+  <div class="header__tools">
+    <label class="search"><input type="search" placeholder="Search for sarees, fabrics, stories…"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></label>
+    <button class="icon-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></button>
+    <button class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></button>
+    <button class="icon-btn cart-btn" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" id="cartCount">0</span></button>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__slides">
+    <div class="hero__slide is-active"><img src="images/hero-1.jpg" alt=""></div>
+    <div class="hero__slide"><img src="images/hero-2.jpg" alt=""></div>
+    <div class="hero__slide"><img src="images/hero-3.jpg" alt=""></div>
+  </div>
+  <div class="hero__shade"></div>
+  <div class="hero__content">
+    <p class="eyebrow eyebrow--light reveal-line">Tradition meets tomorrow</p>
+    <h1 class="hero__title"><span class="line"><span>More</span></span><span class="line"><span>Than a Saree</span></span></h1>
+    <p class="eyebrow eyebrow--light hero__sub reveal-line">A story you wear</p>
+    <p class="hero__text reveal-line">Timeless weaves. Modern expressions.<br>For every you, in every moment.</p>
+    <div class="hero__ctas reveal-line">
+      <a href="#arrivals" class="btn btn--lime">Explore collections <span>→</span></a>
+      <button class="play"><span class="play__ring">▶</span>Watch<br>our story</button>
+    </div>
+  </div>
+  <p class="hero__caption" id="heroCaption">Six weavers, one thread —<br>months of patient hands.</p>
+  <div class="hero__badges">
+    <div><b>✦</b><span>100% Authentic<br>Weaves</span></div>
+    <div><b>⛟</b><span>Free Shipping<br>Across India</span></div>
+    <div><b>↺</b><span>Easy Returns<br>Within 7 days</span></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" data-marquee>
+  <div class="marquee__track">
+    <span>Pure zari, tested and certified</span><i>•</i><span>New festive edit</span><i>•</i><span>Made-to-drape blouse stitching</span><i>•</i><span>Easy 7-day returns</span><i>•</i><span>Handwoven silk</span><i>•</i><span>Free shipping across India</span><i>•</i>
+  </div>
+</div>
+
+<!-- ============ SIX MOODS ============ -->
+<section class="moods section" id="moods">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow">The <span data-brand>Drift</span> moods</p>
+      <h2 class="display">Six moods. <em class="script script--sm">Timeless Drapes</em></h2>
+    </div>
+    <p class="section__note">Discover sarees curated by every celebration,<br>every story, every version of you.</p>
+  </div>
+  <div class="moods__row">
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-1.jpg" alt=""></div><span>Wedding Edit</span></a>
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-2.jpg" alt=""></div><span>Kanchipuram Icons</span></a>
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-3.jpg" alt=""></div><span>Banarasi Heirlooms</span></a>
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-4.jpg" alt=""></div><span>Festive Radiance</span></a>
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-5.jpg" alt=""></div><span>Zari Signatures</span></a>
+    <a class="arch" href="#"><div class="arch__img"><img src="images/mood-6.jpg" alt=""></div><span>Bridal Elan</span></a>
+  </div>
+</section>
+
+<!-- ============ SIGNATURES: curved 3D carousel ============ -->
+<section class="signatures section" id="signatures">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow">The <span data-brand>Drift</span> signatures</p>
+      <h2 class="serif-title">Woven to Be <em class="script">Remembered</em></h2>
+    </div>
+    <a href="#" class="link-arrow">Explore the edit →</a>
+  </div>
+  <div class="curve" id="curve">
+    <div class="curve__stage" id="curveStage"><!-- cards injected by main.js --></div>
+  </div>
+</section>
+
+<!-- ============ NEW ARRIVALS / BEST SELLERS (bending sheet) ============ -->
+<section class="sheet" id="arrivals">
+  <div class="sheet__inner">
+    <div class="section__head">
+      <div><p class="eyebrow">Fresh from the loom</p><h2 class="serif-title">New Arrivals</h2></div>
+      <a href="#" class="link-arrow">View all new arrivals →</a>
+    </div>
+    <div class="products" data-products="arrivals"></div>
+
+    <div class="section__head section__head--gap">
+      <div><p class="eyebrow">Chosen again and again</p><h2 class="serif-title">Best Sellers</h2></div>
+      <a href="#" class="link-arrow">View all best sellers →</a>
+    </div>
+    <div class="products" data-products="bestsellers"></div>
+  </div>
+</section>
+
+<!-- ============ BRIDAL (dark, wavy edges) ============ -->
+<section class="bridal" id="bridal">
+  <svg class="wave wave--top" viewBox="0 0 1440 120" preserveAspectRatio="none"><path data-wave d="M0 0 H1440 V60 C1320 20 1200 100 1080 60 C960 20 840 100 720 60 C600 20 480 100 360 60 C240 20 120 100 0 60 Z"/></svg>
+  <div class="bridal__inner">
+    <a class="bridal__feature" href="#">
+      <img src="images/bridal-feature.jpg" alt="">
+      <span class="bridal__cta">View the<br>collection</span>
+      <span class="bridal__arrow">↗</span>
+    </a>
+    <div class="bridal__right">
+      <h2 class="serif-title serif-title--light">The Bridal Collection</h2>
+      <div class="bridal__track" data-drag><div class="bridal__cards" data-products="bridal"></div></div>
+    </div>
+  </div>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 120" preserveAspectRatio="none"><path data-wave d="M0 120 H1440 V60 C1320 100 1200 20 1080 60 C960 100 840 20 720 60 C600 100 480 20 360 60 C240 100 120 20 0 60 Z"/></svg>
+</section>
+
+<!-- ============ TREND OF THE DAY / SEASONAL SPECIAL ============ -->
+<section class="rows section" id="rows">
+  <h3 class="row-title">Trend of the Day</h3>
+  <div class="mini-row" data-row="1"><div class="mini-row__track" data-products="trend"></div></div>
+  <h3 class="row-title">Seasonal Special</h3>
+  <div class="mini-row" data-row="-1"><div class="mini-row__track" data-products="seasonal"></div></div>
+</section>
+
+<!-- ============ AUTUMN–WINTER FORECAST ============ -->
+<section class="forecast section" id="forecast">
+  <div class="forecast__head">
+    <p class="eyebrow eyebrow--dot">Season<br>forecast</p>
+    <h2 class="serif-title forecast__title">Autumn–<br>Winter <em>2026</em></h2>
+    <p class="section__note">Three readings on how the house is shaping the season, chosen from the atelier floor, not a mood board.</p>
+    <a href="#" class="btn btn--outline">Explore the forecast</a>
+  </div>
+  <div class="forecast__arches">
+    <div class="arch arch--lg"><div class="arch__img"><img src="images/forecast-1.jpg" alt=""></div></div>
+    <div class="arch arch--lg"><div class="arch__img"><img src="images/forecast-2.jpg" alt=""></div></div>
+    <div class="arch arch--lg"><div class="arch__img"><img src="images/forecast-3.jpg" alt=""></div></div>
+  </div>
+</section>
+
+<!-- ============ CHANGE LOOK: product spotlight ============ -->
+<section class="look section" id="look">
+  <div class="look__thumbs">
+    <p class="handwrite">Change look <span>↙</span></p>
+    <button class="look__thumb is-active" data-look="0"><img src="images/look-1.png" alt=""></button>
+    <button class="look__thumb" data-look="1"><img src="images/look-2.png" alt=""></button>
+    <button class="look__thumb" data-look="2"><img src="images/look-3.png" alt=""></button>
+  </div>
+  <div class="look__stage">
+    <span class="look__ghost" id="lookGhost">Organza</span>
+    <svg class="look__orbit" viewBox="0 0 600 600"><circle cx="300" cy="300" r="270"/><path d="M80 420 Q 300 640 520 420"/></svg>
+    <button class="look__nav look__nav--prev" data-look-step="-1" aria-label="Previous look">‹</button>
+    <div class="look__figure" id="lookFigure"><img src="images/look-1.png" alt=""></div>
+    <button class="look__nav look__nav--next" data-look-step="1" aria-label="Next look">›</button>
+    <span class="look__drop">New Drop 2026</span>
+  </div>
+  <div class="look__info" id="lookInfo">
+    <a href="#" class="link-arrow">Shop all sarees →</a>
+    <p class="stars" data-look-field="rating">★★★★★ 4.8 <small>(212 Reviews)</small></p>
+    <h2 class="look__name" data-look-field="name">Ivory Organza<br>Bloom</h2>
+    <p class="look__price" data-look-field="price">₹18,400</p>
+    <p class="look__desc" data-look-field="desc">Featherlight organza in warm ivory, hand-embroidered with rose and sage blossoms along a gilded border. It falls in long, quiet folds and catches the light at every turn.</p>
+    <ul class="look__feats" data-look-field="feats">
+      <li>Pure organza silk</li><li>Airy &amp; lightweight</li><li>Hand-embroidered border</li><li>Blouse piece included</li>
+    </ul>
+    <div class="look__opt"><span>Select blouse size</span><a href="#">Size guide</a></div>
+    <div class="sizes"><button>S</button><button class="is-active">M</button><button>L</button><button>XL</button><button>2XL</button></div>
+    <div class="look__opt"><span>Select colour · <b data-look-field="colour">Ivory</b></span></div>
+    <div class="swatches">
+      <button class="swatch is-active" style="--c:#e6d3a7" data-look="0" aria-label="Ivory"></button>
+      <button class="swatch" style="--c:#d98a9a" data-look="1" aria-label="Rose"></button>
+      <button class="swatch" style="--c:#9c1028" data-look="2" aria-label="Crimson"></button>
+    </div>
+  </div>
+  <button class="curved-cta" id="lookCart" aria-label="Add to cart">
+    <svg viewBox="0 0 420 260">
+      <path class="curved-cta__band" d="M20 250 Q 210 90 420 40 L420 140 Q 260 170 130 260 Z"/>
+      <path id="ctaArc" d="M70 235 Q 230 120 400 85" fill="none"/>
+      <text><textPath href="#ctaArc" startOffset="10%" id="ctaText">ADD TO CART</textPath></text>
+      <circle cx="372" cy="78" r="22" class="curved-cta__dot"/>
+      <path d="M362 78h20m-7-7 7 7-7 7" class="curved-cta__arrow"/>
+    </svg>
+  </button>
+</section>
+
+<!-- ============ EDITS FOR EVERY OCCASION ============ -->
+<section class="edits section" id="edits">
+  <div class="section__head">
+    <div><p class="eyebrow">Curated by the house</p><h2 class="display">Edits for <em class="script">every occasion</em></h2></div>
+    <a href="#" class="link-arrow">View all categories →</a>
+  </div>
+  <div class="edits__grid">
+    <a class="edit-card" href="#"><img src="images/edit-1.jpg" alt=""><div><small>Silks for ceremonies to remember</small><h3>The Wedding Edit</h3><span>Explore now →</span></div></a>
+    <a class="edit-card" href="#"><img src="images/edit-2.jpg" alt=""><div><small>Regional heirlooms, revived</small><h3>Heritage Weaves</h3><span>Explore now →</span></div></a>
+    <a class="edit-card" href="#"><img src="images/edit-3.jpg" alt=""><div><small>Lightweight, modern, made to move</small><h3>The New Drape</h3><span>Explore now →</span></div></a>
+    <a class="edit-card" href="#"><img src="images/edit-4.jpg" alt=""><div><small>Made personal, from first sketch</small><h3>Private Atelier</h3><span>Explore now →</span></div></a>
+  </div>
+</section>
+
+<!-- ============ WORTH YOUR ATTENTION: offer accordion ============ -->
+<section class="offers section" id="offers">
+  <div class="section__head">
+    <div><p class="eyebrow">Current offers</p><h2 class="serif-title">Worth your attention</h2></div>
+    <a href="#" class="link-arrow">Shop all offers →</a>
+  </div>
+  <div class="offers__row" id="offersRow">
+    <div class="offer"><img src="images/offer-1.jpg" alt=""><span class="offer__num">01</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">Zari</b><p class="eyebrow eyebrow--light">Current offer</p><h3>The language of silk</h3><a href="#">Shop the offer →</a></div></div>
+    <div class="offer"><img src="images/offer-2.jpg" alt=""><span class="offer__num">02</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">-30%</b><p class="eyebrow eyebrow--light">Current offer</p><h3>Festive silks, softer prices</h3><a href="#">Shop the offer →</a></div></div>
+    <div class="offer"><img src="images/offer-3.jpg" alt=""><span class="offer__num">03</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">Gift</b><p class="eyebrow eyebrow--light">Current offer</p><h3>A blouse piece, on us</h3><a href="#">Shop the offer →</a></div></div>
+    <div class="offer is-active"><img src="images/offer-4.jpg" alt=""><span class="offer__num">04</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">Sale</b><p class="eyebrow eyebrow--light">Current offer</p><h3>Woven silks, in motion</h3><a href="#">Shop the offer →</a></div></div>
+    <div class="offer"><img src="images/offer-5.jpg" alt=""><span class="offer__num">05</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">Bridal</b><p class="eyebrow eyebrow--light">Current offer</p><h3>Trousseau, by appointment</h3><a href="#">Shop the offer →</a></div></div>
+    <div class="offer"><img src="images/offer-6.jpg" alt=""><span class="offer__num">06</span><span class="offer__vert">Current offer</span><div class="offer__body"><b class="offer__big">New</b><p class="eyebrow eyebrow--light">Current offer</p><h3>Fresh from the loom</h3><a href="#">Shop the offer →</a></div></div>
+  </div>
+</section>
+
+<!-- ============ STORY SCROLLER (pinned) ============ -->
+<section class="stories" id="stories">
+  <div class="stories__pin">
+    <p class="stories__brand" data-brand>DRIFT</p>
+    <div class="stories__slides"><!-- injected by main.js --></div>
+    <div class="stories__ui">
+      <div class="stories__progress"><span id="storyNow">01</span><i><b id="storyBar"></b></i><span id="storyTotal">04</span></div>
+      <p class="stories__hint">Drag, scroll, or use the arrow keys to explore</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LATEST TRENDS ============ -->
+<section class="trends section" id="trends">
+  <div class="trends__left">
+    <span class="pill pill--outline">Explore collection</span>
+    <h2 class="trends__title" id="trendsTitle" data-text="LATEST TRENDS">LATEST<br>TRENDS</h2>
+    <a href="#" class="btn btn--maroon">Discover now</a>
+    <h3 class="serif-title serif-title--sm">Stories Behind The Drape</h3>
+    <p class="section__note">Every saree carries a story woven into its silk, inspired by the loom, shaped by the hands that finish its border.</p>
+  </div>
+  <div class="trends__deck">
+    <p class="trends__drag">Drag to browse</p>
+    <div class="deck" id="deck">
+      <div class="deck__card"><img src="images/trend-1.jpg" alt=""></div>
+      <div class="deck__card"><img src="images/trend-2.jpg" alt=""></div>
+      <div class="deck__card"><img src="images/trend-3.jpg" alt=""></div>
+      <div class="deck__card"><img src="images/trend-4.jpg" alt=""></div>
+    </div>
+    <div class="deck__ctrl"><button data-deck="-1" aria-label="Previous">‹</button><span id="deckCount">1 / 4</span><button data-deck="1" aria-label="Next">›</button></div>
+  </div>
+  <div class="trends__range">
+    <h3 class="serif-title serif-title--sm">Explore The Range</h3>
+    <ul>
+      <li><a href="#">Kanjivaram</a><span>124 sarees</span></li>
+      <li><a href="#">Banarasi</a><span>98 sarees</span></li>
+      <li><a href="#">Bridal</a><span>56 sarees</span></li>
+      <li><a href="#">Festive</a><span>143 sarees</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <p class="footer__logo" data-brand>DRIFT</p>
+      <p>Handwoven silks,<br>draped for every celebration.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#">New arrivals</a><a href="#">Silk sarees</a><a href="#">Bridal edit</a><a href="#">Best sellers</a></div>
+    <div><h4>Explore</h4><a href="#">Our story</a><a href="#">Craftsmanship</a><a href="#">Lookbook</a><a href="#">Stores</a></div>
+    <div><h4>Support</h4><a href="#">Contact us</a><a href="#">Shipping &amp; delivery</a><a href="#">Returns &amp; exchanges</a><a href="#">FAQs</a></div>
+    <div class="footer__news">
+      <h4>Stay updated</h4>
+      <p>Subscribe for new collections, private offers and styling notes from the atelier.</p>
+      <form class="news" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓'">
+        <input type="email" placeholder="Your email address" required><button class="btn btn--maroon">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer__image"><img src="images/footer.jpg" alt=""></div>
+  <div class="footer__bottom"><span>© 2026 <span data-brand>Drift</span>. All rights reserved.</span><span>Instagram · Facebook · Pinterest · YouTube</span></div>
+</footer>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#">Home</a><a href="#arrivals">Sarees</a><a href="#signatures">Collections</a><a href="#edits">Occasion</a><a href="#footer">About</a>
+</div>
+<div class="toast" id="toast">Added to cart</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
