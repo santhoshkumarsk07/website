@@ -1,0 +1,545 @@
+{
+  "settings": {
+    "brand": "ANDAHA",
+    "tagline": "Luxury textiles & family fashion",
+    "whatsapp": "",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "instagram": ""
+  },
+  "categories": [
+    {
+      "key": "sarees",
+      "name": "Sarees",
+      "label": "Tradition",
+      "badge": "Heritage silk weaves",
+      "intro": "Kanchipuram and Banarasi silks, woven slowly by master weavers and finished by hand.",
+      "cover": "/images/cover-sarees.jpg",
+      "video": "/media/sarees.mp4",
+      "poster": "/media/sarees-poster.jpg",
+      "facts": [
+        [
+          "Weave",
+          "Kanchipuram & Banarasi silk"
+        ],
+        [
+          "Zari",
+          "Pure gold & silver zari"
+        ],
+        [
+          "Craft",
+          "Handwoven by master weavers"
+        ],
+        [
+          "Occasion",
+          "Bridal, festive & heritage"
+        ]
+      ],
+      "filters": [
+        "Kanchipuram",
+        "Banarasi",
+        "Soft Silk",
+        "Bridal"
+      ]
+    },
+    {
+      "key": "women",
+      "name": "Women",
+      "label": "Modern Style",
+      "badge": "Contemporary womenswear",
+      "intro": "Clean tailoring, soft neutrals and fabrics that move with you from morning to evening.",
+      "cover": "/images/cover-women.jpg",
+      "video": "/media/women.mp4",
+      "poster": "/media/women-poster.jpg",
+      "facts": [
+        [
+          "Fabric",
+          "Cotton gabardine & wool blends"
+        ],
+        [
+          "Fit",
+          "Relaxed, tailored silhouettes"
+        ],
+        [
+          "Palette",
+          "Sand, camel & ivory"
+        ],
+        [
+          "Wear",
+          "Work, travel & evenings"
+        ]
+      ],
+      "filters": [
+        "Outerwear",
+        "Knitwear",
+        "Co-ords"
+      ]
+    },
+    {
+      "key": "men",
+      "name": "Men",
+      "label": "Contemporary Men",
+      "badge": "Tailored menswear",
+      "intro": "Overshirts, knits and trousers cut with a sharp eye and made to be worn every day.",
+      "cover": "/images/cover-men.jpg",
+      "video": "/media/men.mp4",
+      "poster": "/media/men-poster.jpg",
+      "facts": [
+        [
+          "Fabric",
+          "Cotton twill & fine-gauge knits"
+        ],
+        [
+          "Fit",
+          "Clean, modern tailoring"
+        ],
+        [
+          "Palette",
+          "Navy, stone & charcoal"
+        ],
+        [
+          "Wear",
+          "Desk to dinner"
+        ]
+      ],
+      "filters": [
+        "Jackets",
+        "Knitwear",
+        "Trousers"
+      ]
+    },
+    {
+      "key": "kids",
+      "name": "Kids",
+      "label": "Little Ones",
+      "badge": "Kids & family",
+      "intro": "Soft, breathable cotton in happy colours — made for play, parties and everything between.",
+      "cover": "/images/cover-kids.jpg",
+      "video": "",
+      "poster": "",
+      "facts": [
+        [
+          "Fabric",
+          "Soft breathable cotton"
+        ],
+        [
+          "Care",
+          "Gentle, skin-friendly dyes"
+        ],
+        [
+          "Fit",
+          "Room to run and play"
+        ],
+        [
+          "Range",
+          "Playwear & festive minis"
+        ]
+      ],
+      "filters": [
+        "Boys",
+        "Girls"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "seed01",
+      "category": "sarees",
+      "name": "Emerald Zari Kanchipuram",
+      "type": "Kanchipuram",
+      "price": 24500,
+      "mrp": 28000,
+      "fabric": "Pure mulberry silk",
+      "description": "An emerald Kanchipuram with a contrast crimson pallu and dense gold zari buttas. Woven over six weeks.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "Bestseller",
+      "featured": true,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-1.jpg"
+      ]
+    },
+    {
+      "id": "seed02",
+      "category": "sarees",
+      "name": "Pallu Detail — Emerald Silk",
+      "type": "Kanchipuram",
+      "price": 22800,
+      "mrp": 0,
+      "fabric": "Pure silk, gold zari",
+      "description": "Close-woven gold zari border and pallu in a rich emerald body.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-2.jpg"
+      ]
+    },
+    {
+      "id": "seed03",
+      "category": "sarees",
+      "name": "Maroon Banarasi Heritage",
+      "type": "Banarasi",
+      "price": 26800,
+      "mrp": 0,
+      "fabric": "Banarasi silk",
+      "description": "Deep maroon Banarasi with a woven gold border and a flowing red pallu.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "New",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-3.jpg"
+      ]
+    },
+    {
+      "id": "seed04",
+      "category": "sarees",
+      "name": "Crimson Pallu Banarasi",
+      "type": "Banarasi",
+      "price": 23400,
+      "mrp": 26000,
+      "fabric": "Banarasi silk",
+      "description": "A crimson-and-gold pallu that catches the light with every step.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-4.jpg"
+      ]
+    },
+    {
+      "id": "seed05",
+      "category": "sarees",
+      "name": "Emerald Festive Silk",
+      "type": "Soft Silk",
+      "price": 18900,
+      "mrp": 0,
+      "fabric": "Soft silk",
+      "description": "Lightweight soft silk in emerald with a tasselled pallu — easy to drape, made for long celebrations.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": true,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-5.jpg"
+      ]
+    },
+    {
+      "id": "seed06",
+      "category": "sarees",
+      "name": "Courtyard Green Kanchipuram",
+      "type": "Kanchipuram",
+      "price": 21500,
+      "mrp": 0,
+      "fabric": "Pure mulberry silk",
+      "description": "Classic Kanchipuram with temple border, finished with hand-knotted tassels.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-6.jpg"
+      ]
+    },
+    {
+      "id": "seed07",
+      "category": "sarees",
+      "name": "Bridal Emerald & Ruby",
+      "type": "Bridal",
+      "price": 32500,
+      "mrp": 0,
+      "fabric": "Pure silk, heavy zari",
+      "description": "A bridal Kanchipuram in emerald with a ruby pallu and heavy gold zari.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "Bridal",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-7.jpg"
+      ]
+    },
+    {
+      "id": "seed08",
+      "category": "sarees",
+      "name": "Royal Green Zari Silk",
+      "type": "Bridal",
+      "price": 29900,
+      "mrp": 34000,
+      "fabric": "Pure silk, gold zari",
+      "description": "Rich zari work across the body and pallu. Comes with an unstitched blouse piece.",
+      "sizes": [
+        "Free size"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/saree-8.jpg"
+      ]
+    },
+    {
+      "id": "seed09",
+      "category": "women",
+      "name": "Camel Trench Coat",
+      "type": "Outerwear",
+      "price": 8900,
+      "mrp": 0,
+      "fabric": "Cotton gabardine",
+      "description": "A double-breasted trench in warm camel with a storm flap and belted waist.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colours": [],
+      "badge": "New",
+      "featured": true,
+      "hidden": false,
+      "images": [
+        "/uploads/women-1.jpg"
+      ]
+    },
+    {
+      "id": "seed10",
+      "category": "women",
+      "name": "Sand Rib-Knit Top",
+      "type": "Knitwear",
+      "price": 3200,
+      "mrp": 0,
+      "fabric": "Fine rib knit",
+      "description": "A close-fitting rib knit in soft sand, made to layer under coats and blazers.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/women-2.jpg"
+      ]
+    },
+    {
+      "id": "seed11",
+      "category": "women",
+      "name": "Belted Trench & Knit Set",
+      "type": "Co-ords",
+      "price": 11500,
+      "mrp": 12900,
+      "fabric": "Gabardine & knit",
+      "description": "The full look: camel trench over a matching rib-knit top and trousers.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colours": [],
+      "badge": "Set",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/women-3.jpg"
+      ]
+    },
+    {
+      "id": "seed12",
+      "category": "women",
+      "name": "Classic City Trench",
+      "type": "Outerwear",
+      "price": 8400,
+      "mrp": 0,
+      "fabric": "Cotton gabardine",
+      "description": "A lighter trench for city days — clean lines and a relaxed fit.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/women-4.jpg"
+      ]
+    },
+    {
+      "id": "seed13",
+      "category": "men",
+      "name": "Navy Utility Overshirt",
+      "type": "Jackets",
+      "price": 5900,
+      "mrp": 0,
+      "fabric": "Cotton twill",
+      "description": "A structured navy overshirt with four patch pockets. Wear it open over a knit.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colours": [],
+      "badge": "New",
+      "featured": true,
+      "hidden": false,
+      "images": [
+        "/uploads/men-1.jpg"
+      ]
+    },
+    {
+      "id": "seed14",
+      "category": "men",
+      "name": "Stone Turtleneck Knit",
+      "type": "Knitwear",
+      "price": 3400,
+      "mrp": 0,
+      "fabric": "Fine-gauge knit",
+      "description": "A fine-gauge turtleneck in stone that layers neatly under jackets.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/men-2.jpg"
+      ]
+    },
+    {
+      "id": "seed15",
+      "category": "men",
+      "name": "Overshirt & Chino Look",
+      "type": "Trousers",
+      "price": 8900,
+      "mrp": 9800,
+      "fabric": "Twill & cotton",
+      "description": "Navy overshirt, stone knit and relaxed chinos — the complete look.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colours": [],
+      "badge": "Set",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/men-3.jpg"
+      ]
+    },
+    {
+      "id": "seed16",
+      "category": "men",
+      "name": "Weekend Twill Jacket",
+      "type": "Jackets",
+      "price": 6200,
+      "mrp": 0,
+      "fabric": "Cotton twill",
+      "description": "Soft-shouldered twill jacket for weekends and travel.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/men-4.jpg"
+      ]
+    },
+    {
+      "id": "seed17",
+      "category": "kids",
+      "name": "Red Play Tee & Shorts",
+      "type": "Boys",
+      "price": 1290,
+      "mrp": 0,
+      "fabric": "Soft cotton jersey",
+      "description": "A bright red tee with comfy shorts — made for running, climbing and jumping.",
+      "sizes": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "colours": [],
+      "badge": "New",
+      "featured": true,
+      "hidden": false,
+      "images": [
+        "/uploads/kids-1.jpg"
+      ]
+    },
+    {
+      "id": "seed18",
+      "category": "kids",
+      "name": "Sunny Floral Frock",
+      "type": "Girls",
+      "price": 1690,
+      "mrp": 1990,
+      "fabric": "Breathable cotton",
+      "description": "A cheerful yellow floral frock with a twirl-ready skirt.",
+      "sizes": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "colours": [],
+      "badge": "",
+      "featured": false,
+      "hidden": false,
+      "images": [
+        "/uploads/kids-2.jpg"
+      ]
+    }
+  ]
+}

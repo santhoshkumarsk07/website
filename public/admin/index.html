@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin — ANDAHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <section class="login" id="login" hidden>
+    <form class="login__card form" id="loginForm">
+      <p class="logo">ANDAHA</p>
+      <h1>Admin login</h1>
+      <label>Password<input type="password" id="password" autocomplete="current-password" required autofocus></label>
+      <button class="btn btn--primary" type="submit">Log in</button>
+      <p class="error" id="loginError" role="alert"></p>
+    </form>
+  </section>
+
+  <!-- APP -->
+  <div class="app" id="app" hidden>
+    <aside class="side">
+      <p class="logo">ANDAHA <small>Admin</small></p>
+      <nav class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="products" role="tab">Products</button>
+        <button class="tab" data-tab="categories" role="tab">Categories &amp; videos</button>
+        <button class="tab" data-tab="settings" role="tab">Shop settings</button>
+      </nav>
+      <div class="side__foot">
+        <a href="/" target="_blank" rel="noopener">View website ↗</a>
+        <button id="logout">Log out</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- PRODUCTS -->
+      <section class="panel" id="panel-products">
+        <header class="panel__head">
+          <div><h1>Products</h1><p class="muted" id="productStats"></p></div>
+          <button class="btn btn--primary" id="addProduct">+ Add product</button>
+        </header>
+        <div class="filters">
+          <div class="seg" id="catFilter"></div>
+          <input type="search" id="productSearch" placeholder="Search products">
+        </div>
+        <div class="plist" id="plist"></div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="panel" id="panel-categories" hidden>
+        <header class="panel__head"><div><h1>Categories &amp; videos</h1><p class="muted">Change each collection's cover photo, background video and text.</p></div></header>
+        <div class="cats" id="cats"></div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="panel" id="panel-settings" hidden>
+        <header class="panel__head"><div><h1>Shop settings</h1><p class="muted">These show in the footer and power the "Order on WhatsApp" buttons.</p></div></header>
+        <form class="form card" id="settingsForm">
+          <label>Tagline<input name="tagline" maxlength="80"></label>
+          <label>WhatsApp number <small>with country code, digits only — e.g. 919876543210</small><input name="whatsapp" inputmode="numeric" maxlength="20" pattern="[0-9 +]*"></label>
+          <label>Phone<input name="phone" maxlength="30"></label>
+          <label>Email<input name="email" type="email" maxlength="80"></label>
+          <label>Address<input name="address" maxlength="200"></label>
+          <label>Instagram link<input name="instagram" type="url" placeholder="https://instagram.com/yourshop" maxlength="200"></label>
+          <button class="btn btn--primary" type="submit">Save settings</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- PRODUCT EDITOR -->
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer__backdrop" data-close></div>
+    <form class="drawer__panel form" id="productForm" novalidate>
+      <header class="drawer__head"><h2 id="drawerTitle">Add product</h2><button type="button" class="x" data-close aria-label="Close">×</button></header>
+
+      <div class="field">
+        <span class="field__label">Photos <small>first photo is the cover · JPG, PNG or WebP · up to 10 MB each</small></span>
+        <div class="photos" id="photos"></div>
+        <label class="drop" id="drop">
+          <input type="file" id="photoInput" accept="image/jpeg,image/png,image/webp" multiple>
+          <span><b>Click to add photos</b> or drag them here</span>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Product name *<input name="name" required maxlength="120"></label>
+        <label>Category *<select name="category" id="pCategory" required></select></label>
+      </div>
+      <div class="row">
+        <label>Type / sub-category<input name="type" list="typeList" maxlength="60"><datalist id="typeList"></datalist></label>
+        <label>Badge <small>optional, e.g. New</small><input name="badge" maxlength="24"></label>
+      </div>
+      <div class="row">
+        <label>Price (₹) *<input name="price" inputmode="numeric" required></label>
+        <label>Original price (₹) <small>shows as strike-through</small><input name="mrp" inputmode="numeric"></label>
+      </div>
+      <label>Fabric<input name="fabric" maxlength="120"></label>
+      <label>Description<textarea name="description" rows="4" maxlength="2000"></textarea></label>
+      <div class="row">
+        <label>Sizes <small>comma separated</small><input name="sizes" placeholder="S, M, L, XL"></label>
+        <label>Colours <small>comma separated</small><input name="colours"></label>
+      </div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" name="featured"> Featured (shows first)</label>
+        <label class="check"><input type="checkbox" name="hidden"> Hidden from website</label>
+      </div>
+
+      <div class="progress" id="progress" hidden><i></i></div>
+      <p class="error" id="formError" role="alert"></p>
+      <footer class="drawer__foot">
+        <button type="button" class="btn btn--danger" id="deleteProduct" hidden>Delete</button>
+        <span></span>
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn--primary" id="saveProduct">Save product</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANDAHA — Luxury Textiles &amp; Family Fashion</title>
+  <meta name="description" content="Handwoven silk sarees, contemporary womenswear, tailored menswear and kids fashion by ANDAHA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="preload" as="image" href="/media/sarees-poster.jpg">
+</head>
+<body class="landing is-loading">
+
+  <!-- loader: emblem draws itself, then lifts into the header -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark"><span data-emblem></span><p>ANDAHA</p></div>
+  </div>
+
+  <main class="stage" id="stage">
+    <div class="stage__media" id="media"></div>
+    <div class="stage__shade"></div>
+
+    <header class="l-header">
+      <a href="/" class="brand"><span data-emblem></span><span class="brand__name">ANDAHA</span></a>
+      <nav class="l-nav" id="lNav" aria-label="Collections"></nav>
+    </header>
+
+    <ol class="l-list" id="lList" aria-label="Collections"></ol>
+
+    <!-- 3D portal: tilts with the pointer, expands into the collection on click -->
+    <a class="portal" id="portal" href="/sarees">
+      <span class="portal__frame"><img id="portalImg" src="/images/cover-sarees.jpg" alt=""></span>
+      <span class="portal__cta"><span id="portalLabel">Enter Sarees</span><i data-icon="arrow"></i></span>
+    </a>
+
+    <section class="l-info">
+      <div class="l-info__title">
+        <p class="eyebrow" id="lBadge">Heritage silk weaves</p>
+        <h1 id="lTitle"><span>Sarees</span></h1>
+      </div>
+      <dl class="facts" id="lFacts"></dl>
+    </section>
+
+    <div class="l-progress" id="lProgress" aria-hidden="true"></div>
+  </main>
+
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/landing.js"></script>
+</body>
+</html>

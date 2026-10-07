@@ -1,1 +1,7 @@
+node_modules/
+.env
+data/db.json
+data/*.tmp
+public/uploads/
 video_ref.mp4
+.DS_Store
