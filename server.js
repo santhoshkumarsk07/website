@@ -15,14 +15,15 @@ const multer = require("multer");
 loadEnv(path.join(__dirname, ".env"));
 
 const PORT = Number(process.env.PORT) || 3000;
-const PROD = process.env.NODE_ENV === "production";
+const PROD = process.env.NODE_ENV === "production" || !!process.env.VERCEL;
 const ROOT = __dirname;
 const PUBLIC = path.join(ROOT, "public");
-const UPLOADS = path.join(PUBLIC, "uploads");
-const DATA = path.join(ROOT, "data");
+const IS_VERCEL = !!process.env.VERCEL;
+const UPLOADS = IS_VERCEL ? path.join("/tmp", "uploads") : path.join(PUBLIC, "uploads");
+const DATA = IS_VERCEL ? path.join("/tmp", "data") : path.join(ROOT, "data");
 const DB_FILE = path.join(DATA, "db.json");
-const SEED_FILE = path.join(DATA, "seed.json");
-const SEED_UPLOADS = path.join(DATA, "seed-uploads");
+const SEED_FILE = path.join(ROOT, "data", "seed.json");
+const SEED_UPLOADS = path.join(ROOT, "data", "seed-uploads");
 
 const CATEGORY_KEYS = ["sarees", "women", "men", "kids"];
 const IMAGE_TYPES = { ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp" };
@@ -417,6 +418,12 @@ app.put("/api/admin/settings", requireAdmin, async (req, res) => {
 for (const key of CATEGORY_KEYS) {
   app.get(`/${key}`, (req, res) => res.sendFile(path.join(PUBLIC, "collection.html")));
 }
+app.use("/uploads", express.static(UPLOADS, {
+  setHeaders: (res, file) => {
+    if (/\.(jpg|jpeg|png|webp|mp4|webm)$/i.test(file)) res.set("Cache-Control", "public, max-age=604800");
+  }
+}));
+
 app.use(express.static(PUBLIC, {
   extensions: ["html"],
   setHeaders: (res, file) => {
@@ -452,6 +459,17 @@ function loadEnv(file) {
   }
 }
 
-initStore().then(() => {
-  app.listen(PORT, () => console.log(`ANDAHA running at http://localhost:${PORT}  (admin: /admin)`));
+const initPromise = initStore();
+
+app.use(async (req, res, next) => {
+  await initPromise;
+  next();
 });
+
+if (require.main === module) {
+  initPromise.then(() => {
+    app.listen(PORT, () => console.log(`ANDAHA running at http://localhost:${PORT}  (admin: /admin)`));
+  });
+}
+
+module.exports = app;
